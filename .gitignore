@@ -1,0 +1,14 @@
+node_modules
+
+# local env files
+.env
+
+# Log files
+logs
+
+# Editor directories and files
+.vscode
+
+# saved files
+uploads
+

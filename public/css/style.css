@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-clr: #edf5fe;
+    --light-blue: #03a9f4;
+    --dark-blue: #028bca;
+    --gray: #a3a3a3;
+    --dark-gray: #706f6f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 98vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-clr);
+}
+
+.logo {
+    height: 60px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: min(90%, 600px);
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.card>img {
+    align-self: center;
+}
+
+.download-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.download-card .box {
+    padding: 1rem;
+}
+
+.download-img {
+    padding-top: 1rem;
+    height: 150px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box {
+    margin: 10px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.dotted-border {
+    border: 3px dotted var(--gray);
+}
+
+.box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+.box p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--light-blue);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: var(--dark-blue);
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid var(--dark-blue);
+    cursor: pointer;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.output-section {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.output-section.active {
+    display: flex;
+}
+
+.output-section>p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.link-div {
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e2e2e;
+    margin-left: 10px;
+    flex-grow: 1;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+}
+
+.copy-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.copy-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.send-section {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.send-section tr {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    margin: 1rem 0;
+}
+
+.send-section tr td {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.send-section input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .3rem 0;
+    border-bottom: 2px solid var(--gray);
+}
+
+.send-btn {
+    margin-top: .8rem;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+
+    .logo {
+        height: 50px;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+}
